@@ -1,6 +1,6 @@
 password = prompt("Student authentication");
 
-    if(password=='조성욱 최고'){
+    if(password=='2021107Betatest'){
 
       alert(':) Confirmed that you are a student with permission to view this site.');
 
