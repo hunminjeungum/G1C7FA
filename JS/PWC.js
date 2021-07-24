@@ -1,6 +1,6 @@
 password = prompt("Student authentication (코드+이름 입력)");
 
-    if(password=='2021107Admin-SYH'){
+    if(password=='2021107Admin-SYH' or '2021102Admin-LYJ'){
 
       alert(':) Confirmed that you are a student with permission to view this site.');
 
