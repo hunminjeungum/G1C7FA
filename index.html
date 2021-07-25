@@ -79,6 +79,19 @@
       </a>
       <img src="./ico/more.png" onclick='modal()' style= "width:250px; height:250px; border-radius: 30px; margin-left: 30px"/>
     </div>
+    <div align=right>
+      <span style="color: rgb(255, 255, 255);">Enable Darkmode</span>
+      <input id="Dark" type="checkbox" onclick='getCheckboxValue(event)'>
+    </div>
+    <script>
+      function getCheckboxValue(event)  {
+          if(event.target.checked)  {
+              document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/hunminjeungum/JIN1/main/res/Background/macos-big-sur-dark%206016x6016-1432.jpg')";
+          }else {
+              document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/hunminjeungum/JIN1/main/res/Background/macos-big-sur-light%206016x6016-1495.jpg')";
+          }
+      }
+    </script>
     <!--icon end-->
     <!--dev-->
     <br>
