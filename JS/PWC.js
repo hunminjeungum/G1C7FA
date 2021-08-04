@@ -1,9 +1,7 @@
-password = prompt("Student authentication");
+password = prompt("Authentication");
 
-    if(password=='1-2반 최고')
+    if(password=='G1C7FA Beta')
     {
-
-      alert(':) Confirmed that you are a student with permission to view this site.');
 
     }else{
 
