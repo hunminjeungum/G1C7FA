@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--by HMJE Coaders YH Song & YJ Lim-->
+<html>
+  <head>
+    <title>HMJE G1C7FA Project</title>
+    <style>
+      body{
+        background-repeat: no-repeat;
+        background-size : cover ;
+      } 
+    </style>
+  </head>
+  <body text="black" background="./src/img/macos-big-sur-light 6016x6016-1495.jpg" bgproperties="fixed" link="white" vlink="white" alink="gray" class="container" style="overflow-x: hidden"></body>
+    <style>
+      @font-face {
+        font-family: "MAL";
+        src : url("./src/Font/MALGUN.TTF");
+      
+      }
+      @font-face {
+        font-family: "SFPro";
+        src : url("./src/Font/SF-PRO.TTF");
+      }
+      @font-face {
+        font-family: "HWPEQ";
+        src : url("./src/Font/HYHWPEQ.TTF");
+      }
+      @font-face {
+        font-family: "ARI";
+        src : url("./src/Font/ARIAL.TTF");
+      }
+    </style>
+    </script>
+    <!--PW Code Start-->
+    <!--End-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/60ea6b31d6e7610a49aaab6f/1fa9r5edr';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!--clock code start-->
+	  <center>
+      <body onload="printClock()">
+        <div style="border:1px solid #dedede00; width:600px; height:250px; line-height:250px; color:#ffffff; font-size:100px; text-align:center; font-family: SFPro;" id="clock"></div>
+        <script>
+          function printClock() {
+                    
+            var clock = document.getElementById("clock");            // 출력할 장소 선택
+            var currentDate = new Date();                                     // 현재시간
+            var calendar = currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getDate() // 현재 날짜
+            var amPm = 'AM'; // 초기값 AM
+            var currentHours = addZeros(currentDate.getHours(),2); 
+            var currentMinute = addZeros(currentDate.getMinutes() ,2);
+            var currentSeconds =  addZeros(currentDate.getSeconds(),2);
+            if(currentHours >= 12){ // 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
+              amPm = 'PM';
+              currentHours = addZeros(currentHours - 12,2);
+            }
+            if(currentSeconds >= 50){// 50초 이상일 때 색을 변환해 준다.
+              currentSeconds = '<span style="color:#F5DF4D;">'+currentSeconds+'</span>'
+            }
+            clock.innerHTML = currentHours+":"+currentMinute+":"+currentSeconds +" <span style='font-size:50px;'>"+ amPm+"</span>"; //날짜를 출력해 줌
+                    
+            setTimeout("printClock()",1000);         // 1초마다 printClock() 함수 호출
+            }
+                
+            function addZeros(num, digit) { // 자릿수 맞춰주기
+                var zero = '';
+                num = num.toString();
+                if (num.length < digit) {
+                  for (i = 0; i < digit - num.length; i++) {
+                    zero += '0';
+                  }
+                }
+                return zero + num;
+            }
+			  </script>
+		</center>
+    <!--clock code end-->
+    <!--icon-->
+    <div align=center><span style="color: rgb(255, 255, 255);"><h1>잠신중 1-7 학습지 아카이브</h1>
+	    <h2>아직 2학기가 시작되지 않아 파일이 없습니다.</h2></span>
+      <h3><a href="src/Sub HTML/Devlog.html" target="_blank">개발 기록</a></h3>
+      <h2><a href="https://forms.gle/xxKxMGQTTUgEzahM6" target="_blank">설문에 참여해 주세요!</a></h2>
+      <a href="./src/Sub HTML/math.html" target='_blank'>
+        <img src="./src/ico/Math.png" style= " width:250px; height:250px; border-radius: 30px; margin-right: 30px"/>
+      </a>
+      <a href="./src/Sub HTML/english.html" target='_blank'>
+        <img src="./src/ico/ENG.png"style= " width:250px; height:250px; border-radius: 30px; margin-right: 15px"/>
+      </a>
+      <a href="./src/Sub HTML/korean.html" target='_blank'>
+        <img src="./src/ico/korean.png"style= " width:250px; height:250px; border-radius: 30px; margin-left: 15px"/>
+      </a>
+      <img src="./src/ico/more.png" onclick='modal()' style= "width:250px; height:250px; border-radius: 30px; margin-left: 30px"/>
+    </div>
+    <!--icon end-->
+    <h5><a href="Version.html" target='_blank'>ver.1.2</a></h5>
+    <!--Loading--> 
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script type="text/javascript"> 
+      $(window).on('load', function () {
+         $("#load").hide();
+      }); 
+    </script> 
+    <style type="text/css"> 
+      #load {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;  
+        -webkit-filter: blur(5px); 
+        -moz-filter: blur(5px); 
+        -o-filter: blur(5px); 
+        -ms-filter: blur(5px); 
+        filter: blur(5px); 
+        transform: scale(1.02); 
+        z-index: -1; 
+        content: "";
+      }
+    </style> 
+    <!-- Loading-->
+    <!--Modal Popup-->
+    <!--popup_type_mod_other subjects-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+      /* The Modal (background) */
+      .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+  
+      /* Modal Content/Box */
+      .modal-content {
+          background-color: #1d1d1d;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 20px;
+          border: 1px solid rgb(56, 56, 56);
+          width: 30%; /* Could be more or less, depending on screen size */                          
+      }
+    </style>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+     
+      <!-- Modal content -->
+      <div class="modal-content" align=center>
+        <p>
+          <a href="" target='_blank'>
+            <img src="./src/ico/가정.png" style= " width:140px; height:140px; border-radius: 30px; margin-right:10px"/>
+          </a>
+          <a href="" target='_blank'>
+            <img src="./src/ico/과학.png"style= " width:140px; height:140px; border-radius: 30px;"/>
+          </a>
+          <a href="" target='_blank'>
+            <img src="./src/ico/도덕.png"style= " width:140px; height:140px; border-radius: 30px; margin-left:10px"/>
+          </a>
+        </p>
+        <p style="text-align: center; line-height:10px;"><br /></p>
+        <p>
+          <a href="" target='_blank'>
+            <img src="./src/ico/사회.png" style= " width:140px; height:140px; border-radius: 30px; margin-right:10px"/>
+          </a>
+          <a href="" target='_blank'>
+            <img src="./src/ico/진로 하이트.png"style= " width:140px; height:140px; border-radius: 30px;"/>
+          </a>
+          <a href="" target='_blank'>
+            <img src="./src/ico/미술.png"style= " width:140px; height:140px; border-radius: 30px; margin-left:10px"/>
+          </a>
+        </p>
+        <p style="text-align: center; line-height: 10px;"><span style="font-size: 14pt;"><br /></span></p>
+        <div style="cursor:pointer;background-color:#3b3b3b;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+          <span class="pop_bt" style="font-size: 13pt; color:rgb(225,225,225);">
+            닫기
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--End Modal-->
+    <script type="text/javascript">
+      function modal(){
+        jQuery(document).ready(function() {
+        $('#myModal').show();
+          });
+        }
+        //팝업 Close 기능
+        function close_pop(flag) {
+          $('#myModal').hide();
+        };
+            
+    </script>
+    <!--END_popup_type_mod_other subjects-->
+    <!--END_Modal Popup-->
+  </body>
+</html>
